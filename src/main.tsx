@@ -15,14 +15,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import MyHello from "./MyHello";
+import EventBasic from "./EventBasic";
 import reportWebVitals from "./reportWebVitals";
 
 const container = document.getElementById("root");
 
 if (container) {
   const root = createRoot(container);
-  root.render(<MyHello myName="鈴木" />);
+  root.render(<EventBasic type="time" />);
 } else {
   console.log("Root container not found");
 }
