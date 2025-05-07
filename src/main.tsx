@@ -15,14 +15,14 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import EventBasic from "./EventBasic";
+import StateBasic from "./StateBasic";
 import reportWebVitals from "./reportWebVitals";
 
 const container = document.getElementById("root");
 
 if (container) {
   const root = createRoot(container);
-  root.render(<EventBasic type="time" />);
+  root.render(<StateBasic init={0} />);
 } else {
   console.log("Root container not found");
 }
