@@ -21,7 +21,8 @@ import reportWebVitals from "./reportWebVitals";
 //import book from "./book";
 //import ListTemplate from "./ListTemplate";
 //import MyHello from "./MyHello";
-import StateBasic from "./StateBasic";
+// import StateBasic from "./StateBasic";
+import EventMouse from "./EventMouse";
 
 //const container = document.getElementById("root");
 
@@ -91,7 +92,15 @@ if (container) {
   //間違い
   // root.render(<StateBasic />);
 
-  root.render(<StateBasic init={0} />);
+  // root.render(<StateBasic init={0} />);
+
+  root.render(
+    <EventMouse
+      alt="image"
+      beforeSrc="/hamburger.png"
+      afterSrc="/hamburger3.jpg"
+    />
+  );
 } else {
   console.log("Root container not found");
 }
