@@ -20,7 +20,8 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 //import book from "./book";
 //import ListTemplate from "./ListTemplate";
-import MyHello from "./MyHello";
+//import MyHello from "./MyHello";
+import StateBasic from "./StateBasic";
 
 //const container = document.getElementById("root");
 
@@ -85,7 +86,12 @@ if (container) {
   //   </ListTemplate>
   // );
 
-  root.render(<MyHello myName="Taro" />);
+  // root.render(<MyHello myName="Taro" />);
+
+  //間違い
+  // root.render(<StateBasic />);
+
+  root.render(<StateBasic init={0} />);
 } else {
   console.log("Root container not found");
 }
